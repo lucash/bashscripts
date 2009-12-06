@@ -1,0 +1,7 @@
+#!/bin/sh
+# open browser with dict.leo.org and use text selection as search pattern
+
+BROWSER=firefox
+BASEURL="http://dict.leo.org/ende?lp=ende&lang=de&searchLoc=0&cmpType=relaxed&sectHdr=on&spellToler=on&search="
+SEARCH=$(xclip -o | sed 's/ /%20/g')
+$BROWSER $BASEURL$SEARCH

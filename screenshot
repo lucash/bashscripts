@@ -1,0 +1,2 @@
+#!/bin/bash
+import ~/bilder/screenshots/`date +%Y-%m-%d-%T`.png

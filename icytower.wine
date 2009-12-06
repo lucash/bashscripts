@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd "/home/lucas/.wine/drive_c/Programme/icytower1.3/"
+wine "./icytower13.exe"

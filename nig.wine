@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd "/home/lucas/.wine/drive_c/Programme/nig/"
+wine "./nig.exe"

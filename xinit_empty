@@ -1,0 +1,2 @@
+#!/bin/bash
+xinit /usr/local/bin/dwm -- /usr/bin/X :$1

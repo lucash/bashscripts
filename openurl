@@ -1,0 +1,11 @@
+#!/bin/sh
+# open browser and use text selection as URL
+
+BROWSER=firefox
+URL=`xclip -o`
+
+if [ `echo $URL | grep "^http"` ]; then
+  $BROWSER $URL;
+else
+  URL1=`echo $URL | sed s#^#http://#`; $BROWSER $URL1;
+fi
